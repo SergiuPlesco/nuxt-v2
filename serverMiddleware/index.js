@@ -1,8 +1,10 @@
 import Mailjet from "node-mailjet";
 import express from "express";
+import cors from "cors";
 const app = express();
 
 // Body parser middleware to parse request bodies (if not globally applied)
+app.use(cors());
 app.use(express.json());
 
 app.post("/", async (req, res) => {
