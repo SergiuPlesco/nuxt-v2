@@ -58,10 +58,13 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  axios: {
+  axios: {,
+    proxy: true
     // baseURL: "https://trendsetter.md/",
-    baseURL: "https://trendsetter-ten.vercel.app/",
-    proxyHeaders: false,
-    credentials: false,
+    // baseURL: "https://trendsetter-ten.vercel.app/",
+
   },
+  proxy: {
+    "/api/": "https://trendsetter-ten.vercel.app/"
+  }
 };
