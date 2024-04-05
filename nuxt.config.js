@@ -61,5 +61,7 @@ export default {
   axios: {
     // baseURL: "https://trendsetter.md/",
     baseURL: "https://trendsetter-ten.vercel.app/",
+    proxyHeaders: false,
+    credentials: false,
   },
 };
