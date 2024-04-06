@@ -49,7 +49,6 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
   layout: "En",
   name: "FormEn",
@@ -68,7 +67,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        await axios.post("/api", this.formData);
+        await this.$axios.post("/api/", this.formData);
         this.formData = {
           name: "",
           phone: "",

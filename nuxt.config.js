@@ -1,13 +1,13 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "server",
+  target: "static",
 
-  serverMiddleware: [
-    { path: "/serverMiddleware", handler: "~/serverMiddleware/index.js" }, // Adjust the path based on where you place your middleware file
-  ],
-  router: {
-    middleware: [],
-  },
+  // serverMiddleware: [
+  //   { path: "/serverMiddleware", handler: "~/serverMiddleware/index.js" }, // Adjust the path based on where you place your middleware file
+  // ],
+  // router: {
+  //   middleware: [],
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -56,7 +56,7 @@ export default {
         },
       },
     ],
-    // "@nuxtjs/axios",
+    "@nuxtjs/axios",
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
