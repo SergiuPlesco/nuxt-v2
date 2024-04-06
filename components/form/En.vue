@@ -68,7 +68,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        await axios.post("https://trendset.vercel.app/api", this.formData);
+        await axios.post("/api", this.formData);
         this.formData = {
           name: "",
           phone: "",
