@@ -61,4 +61,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: { transpile: [({ isLegacy }) => isLegacy && "axios"] },
+  axios: {
+    proxy: true,
+    baseURL: "https://trendset.vercel.app",
+  },
 };
