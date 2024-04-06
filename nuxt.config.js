@@ -68,17 +68,17 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: { transpile: [({ isLegacy }) => isLegacy && "axios"] },
 
-  axios: {
-    proxy: true,
-    baseURL: "https://trendset.vercel.app",
-  },
-  proxy: {
-    "/api/": {
-      target: process.env.BASE_URL || "https://trendset.vercel.app",
-      pathRewrite: { "^/api/": "" },
-    },
-  },
-  server: {
-    host: process.env.HOST || "0.0.0.0",
-  },
+  // axios: {
+  //   proxy: true,
+  //   baseURL: "https://trendset.vercel.app",
+  // },
+  // proxy: {
+  //   "/api/": {
+  //     target: process.env.BASE_URL || "https://trendset.vercel.app",
+  //     pathRewrite: { "^/api/": "" },
+  //   },
+  // },
+  // server: {
+  //   host: process.env.HOST || "0.0.0.0",
+  // },
 };
