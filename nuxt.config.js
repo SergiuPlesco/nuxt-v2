@@ -5,12 +5,12 @@ export default {
   serverMiddleware: [
     { path: "/serverMiddleware", handler: "~/serverMiddleware/index.js" }, // Adjust the path based on where you place your middleware file
   ],
-  publicRuntimeConfig: {
-    middlewareUrl:
-      process.env.NODE_ENV === "production"
-        ? "https://trendset.vercel.app"
-        : "http://localhost:3000/",
-  },
+  // publicRuntimeConfig: {
+  //   middlewareUrl:
+  //     process.env.NODE_ENV === "production"
+  //       ? "https://trendset.vercel.app"
+  //       : "http://localhost:3000/",
+  // },
   router: {
     middleware: [],
   },
