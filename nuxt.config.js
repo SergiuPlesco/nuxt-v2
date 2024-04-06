@@ -5,12 +5,6 @@ export default {
   serverMiddleware: [
     { path: "/serverMiddleware", handler: "~/serverMiddleware/index.js" }, // Adjust the path based on where you place your middleware file
   ],
-  // publicRuntimeConfig: {
-  //   middlewareUrl:
-  //     process.env.NODE_ENV === "production"
-  //       ? "https://trendset.vercel.app"
-  //       : "http://localhost:3000/",
-  // },
   router: {
     middleware: [],
   },
@@ -67,18 +61,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: { transpile: [({ isLegacy }) => isLegacy && "axios"] },
-
-  // axios: {
-  //   proxy: true,
-  //   baseURL: "https://trendset.vercel.app",
-  // },
-  // proxy: {
-  //   "/api/": {
-  //     target: process.env.BASE_URL || "https://trendset.vercel.app",
-  //     pathRewrite: { "^/api/": "" },
-  //   },
-  // },
-  // server: {
-  //   host: process.env.HOST || "0.0.0.0",
-  // },
 };
