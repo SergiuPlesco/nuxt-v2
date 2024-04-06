@@ -5,6 +5,12 @@ export default {
   serverMiddleware: [
     { path: "/serverMiddleware", handler: "~/serverMiddleware/index.js" }, // Adjust the path based on where you place your middleware file
   ],
+  publicRuntimeConfig: {
+    middlewareUrl:
+      process.env.NODE_ENV === "production"
+        ? "https://trendset.vercel.app"
+        : "http://localhost:3000/",
+  },
   router: {
     middleware: [],
   },
@@ -64,14 +70,11 @@ export default {
 
   axios: {
     proxy: true,
-    baseURL: "https://trendset.vercel.app/",
-    //   //   // baseURL: "http://192.168.100.15:3000/",
-    //   //   // proxyHeaders: false,
-    //   //   // credentials: false,
+    baseURL: "https://trendset.vercel.app",
   },
   proxy: {
     "/api/": {
-      target: process.env.BASE_URL || "https://trendset.vercel.app/",
+      target: process.env.BASE_URL || "https://trendset.vercel.app",
       pathRewrite: { "^/api/": "" },
     },
   },
