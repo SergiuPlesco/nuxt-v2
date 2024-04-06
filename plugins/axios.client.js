@@ -1,6 +1,6 @@
 export default function ({ $axios }) {
   if (process.client) {
     const host = window.location.hostname;
-    $axios.setBaseURL("https://" + host + ":8080");
+    $axios.setBaseURL("https://" + host);
   }
 }
