@@ -11,6 +11,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "autoprefixer": "^10.4.17",
+    "axios": "^1.6.8",
     "core-js": "^3.19.3",
     "cors": "^2.8.5",
     "express": "^4.18.3",

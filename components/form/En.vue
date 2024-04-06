@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   layout: "En",
   name: "FormEn",
@@ -67,7 +68,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        await this.$axios.post("/api/", this.formData);
+        await axios.post("https://trendset.vercel.app/api", this.formData);
         this.formData = {
           name: "",
           phone: "",
