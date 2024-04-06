@@ -68,7 +68,7 @@ export default {
     // proxyHeaders: false,
     // credentials: false,
   },
-  // proxy: {
-  //   "/api/": "https://trendsetter-ten.vercel.app/",
-  // },
+  proxy: {
+    "/api/": "https://trendset.vercel.app/",
+  },
 };
