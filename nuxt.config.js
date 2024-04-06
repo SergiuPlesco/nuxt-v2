@@ -64,5 +64,6 @@ export default {
   axios: {
     proxy: true,
     baseURL: "https://trendset.vercel.app",
+    host: "localhost:3000",
   },
 };
