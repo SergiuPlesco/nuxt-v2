@@ -56,7 +56,7 @@ export default {
         },
       },
     ],
-    "@nuxtjs/axios",
+    ["@nuxtjs/axios", { baseURL: "https://trendset.vercel.app/" }],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
