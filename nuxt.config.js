@@ -62,13 +62,13 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   axios: {
-    //   proxy: true,
+    proxy: true,
     baseURL: "https://trendset.vercel.app/",
     //   // baseURL: "http://192.168.100.15:3000/",
     //   // proxyHeaders: false,
     //   // credentials: false,
-    // },
-    // proxy: {
-    //   "/api/": "https://trendset.vercel.app/",
+  },
+  proxy: {
+    "/api/": "https://trendset.vercel.app/",
   },
 };
