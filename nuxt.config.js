@@ -69,10 +69,13 @@ export default {
     //   //   // proxyHeaders: false,
     //   //   // credentials: false,
   },
-  // proxy: {
-  //   "/api/": "https://trendset.vercel.app/",
-  // },
+  proxy: {
+    "/api/": {
+      target: process.env.BASE_URL || "https://trendset.vercel.app/",
+      pathRewrite: { "^/api/": "" },
+    },
+  },
   server: {
-    host: "https://trendset.vercel.app/",
+    host: process.env.HOST || "0.0.0.0",
   },
 };
