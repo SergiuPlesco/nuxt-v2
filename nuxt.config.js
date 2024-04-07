@@ -1,13 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "server",
-  ssr: true,
+
   serverMiddleware: [
     "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
   ],
-  router: {
-    middleware: [],
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

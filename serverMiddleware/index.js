@@ -4,7 +4,7 @@ import cors from "cors";
 const app = express();
 
 // Body parser middleware to parse request bodies (if not globally applied)
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 app.post("/", async (req, res) => {
@@ -43,10 +43,6 @@ app.post("/", async (req, res) => {
     console.log(error);
     res.status(500).json({ error: error.message });
   }
-});
-
-app.listen(3000, () => {
-  console.log("listening port 3000");
 });
 
 // Export the server middleware
