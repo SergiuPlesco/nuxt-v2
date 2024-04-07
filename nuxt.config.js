@@ -1,7 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "server",
-
+  ssr: true,
   serverMiddleware: [
     "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
   ],
@@ -62,14 +62,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [({ isLegacy }) => isLegacy && "axios"],
-  },
-  axios: {
-    // Base URL for the backend API calls made from the server-side
-    baseURL: "http://localhost:3000", // Change this to your API server URL
-    // Base URL for the backend API calls made from the client-side
-    browserBaseURL:
-      process.env.NODE_ENV === "production"
-        ? "http://localhost:3000"
-        : "http://localhost:3000",
   },
 };
