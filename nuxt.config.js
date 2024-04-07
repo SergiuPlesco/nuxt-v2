@@ -64,4 +64,14 @@ export default {
     host: "0.0.0.0",
     port: "1000",
   },
+  axios: {
+    proxy: true,
+  },
+  proxy: {
+    "/api/": {
+      target: "https://nuxt-v2.onrender.com/",
+      pathRewrite: { "^/api/": "" },
+      changeOrigin: true,
+    },
+  },
 };
