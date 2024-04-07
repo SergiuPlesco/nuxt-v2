@@ -60,7 +60,4 @@ export default {
   build: {
     transpile: [({ isLegacy }) => isLegacy && "axios"],
   },
-  server: {
-    host: "0.0.0.0",
-  },
 };
