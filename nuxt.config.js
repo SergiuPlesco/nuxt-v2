@@ -1,13 +1,13 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "server",
 
-  // serverMiddleware: [
-  //   "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
-  // ],
-  // router: {
-  //   middleware: [],
-  // },
+  serverMiddleware: [
+    "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
+  ],
+  router: {
+    middleware: [],
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -60,7 +60,16 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  // build: {
-  //   transpile: [({ isLegacy }) => isLegacy && "axios"],
-  // },
+  build: {
+    transpile: [({ isLegacy }) => isLegacy && "axios"],
+  },
+  axios: {
+    // Base URL for the backend API calls made from the server-side
+    baseURL: "https://trendset.vercel.app/", // Change this to your API server URL
+    // Base URL for the backend API calls made from the client-side
+    browserBaseURL:
+      process.env.NODE_ENV === "production"
+        ? "https://trendset.vercel.app/"
+        : "http://localhost:3000",
+  },
 };
