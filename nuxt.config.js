@@ -69,7 +69,7 @@ export default {
     // Base URL for the backend API calls made from the client-side
     browserBaseURL:
       process.env.NODE_ENV === "production"
-        ? "https://trendset.vercel.app/"
+        ? "http://localhost:3000"
         : "http://localhost:3000",
   },
 };
