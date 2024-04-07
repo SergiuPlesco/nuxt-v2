@@ -37,7 +37,7 @@ app.post("/", async (req, res) => {
         },
       ],
     });
-    console.log(request.response.data);
+    console.log("mailjet", request.response.data);
     res.status(200).json({ data: request.response.statusText });
   } catch (error) {
     console.log(error);
