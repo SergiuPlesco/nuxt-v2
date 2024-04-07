@@ -1,10 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-  ssr: false,
-  generate: {
-    fallback: true,
-  },
 
   serverMiddleware: [
     "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
@@ -64,6 +60,7 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: { transpile: [({ isLegacy }) => isLegacy && "axios"] },
-  builDir: "build",
+  build: {
+    transpile: [({ isLegacy }) => isLegacy && "axios"],
+  },
 };
