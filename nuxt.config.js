@@ -2,12 +2,12 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
-  serverMiddleware: [
-    "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
-  ],
-  router: {
-    middleware: [],
-  },
+  // serverMiddleware: [
+  //   "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
+  // ],
+  // router: {
+  //   middleware: [],
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -60,7 +60,7 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    transpile: [({ isLegacy }) => isLegacy && "axios"],
-  },
+  // build: {
+  //   transpile: [({ isLegacy }) => isLegacy && "axios"],
+  // },
 };
