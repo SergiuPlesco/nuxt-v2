@@ -102,7 +102,7 @@
             <a href="https://www.radiozum.md/" target="_blank">
               <img
                 class="block w-full"
-                src="/img/brands/23.png"
+                src="/img/brands/25.png"
                 alt=""
                 title=""
             /></a>
@@ -120,11 +120,12 @@
             <a href="https://www.radiozum.md/" target="_blank">
               <img
                 class="block w-full"
-                src="/img/brands/25.png"
+                src="/img/brands/23.png"
                 alt=""
                 title=""
             /></a>
           </li>
+
           <!-- ... -->
         </ol>
       </div>
