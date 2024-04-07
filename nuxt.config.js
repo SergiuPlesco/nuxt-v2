@@ -65,7 +65,7 @@ export default {
   },
   axios: {
     // Base URL for the backend API calls made from the server-side
-    baseURL: "https://trendset.vercel.app/", // Change this to your API server URL
+    baseURL: "http://localhost:3000", // Change this to your API server URL
     // Base URL for the backend API calls made from the client-side
     browserBaseURL:
       process.env.NODE_ENV === "production"
