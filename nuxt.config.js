@@ -1,13 +1,13 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "server",
+  target: "static",
   ssr: false,
   generate: {
     fallback: true,
   },
 
   serverMiddleware: [
-    { path: "/api", handler: "~/serverMiddleware/index.js" }, // Adjust the path based on where you place your middleware file
+    "~/serverMiddleware/index.js", // Adjust the path based on where you place your middleware file
   ],
   router: {
     middleware: [],

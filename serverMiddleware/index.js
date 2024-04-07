@@ -45,6 +45,10 @@ app.post("/", async (req, res) => {
   }
 });
 
+app.listen(3000, () => {
+  console.log("listening port 3000");
+});
+
 // Export the server middleware
 export default {
   path: "/api",
