@@ -33,7 +33,7 @@ app.post("/", async (req, res) => {
           // Cc: [{ Email: "ooh@trendseter.md" }],
           To: [
             { Email: "plescosergiu@gmail.com" },
-            { Email: "plescosergiu@gmail.com" },
+            { Email: "painerustica@gmail.com" },
           ],
           Subject: "CLIENT NOU",
           TextPart: `Name: ${name} \n Email: ${email} \n Phone: ${phone} \n Message: ${message}`,
